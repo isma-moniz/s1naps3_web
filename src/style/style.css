@@ -1,0 +1,67 @@
+:root {
+    --green: rgb(54, 119, 58);
+    --purple: rgb(102, 51, 153);
+}
+
+body {
+    margin: 0;
+    background-color: var(--green);
+}
+
+.toolbarModal {
+    text-align: right;
+    padding:3px;
+}
+
+.closeModal {
+    color: red;
+    cursor: pointer;
+}
+
+.modal .welcomeContainer {
+    vertical-align: middle;
+    background: var(--purple);
+    padding: 2px;
+}
+
+.navbar {
+    background-color: #ccc;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.navbar li a:hover {
+    background-color: #aaa
+}
+
+#welcome {
+    position:fixed;
+    display:flex;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    align-items:center;
+    justify-content:center;
+}
+
+#welcome.closed {
+    display: none;
+}
