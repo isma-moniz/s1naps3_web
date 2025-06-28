@@ -51,6 +51,16 @@ body {
     background-color: #aaa
 }
 
+footer {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#aaa;
+    color: blue;
+    text-align: center;
+}
+
 #welcome {
     position:fixed;
     display:flex;
@@ -64,4 +74,19 @@ body {
 
 #welcome.closed {
     display: none;
+}
+
+#introduction {
+    width: 240px;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    background-color: #ccc;
+}
+
+#introduction h3, #introduction p {
+    margin: auto 5;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
 }
