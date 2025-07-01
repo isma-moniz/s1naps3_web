@@ -21,7 +21,7 @@ function dragElement(elmnt) {
         e = e || window.event;
         e.preventDefault();
         pos3 = e.clientX;
-        pos3 = e.clientY;
+        pos4 = e.clientY;
         document.onmouseup = closeDragElement;
         document.onmousemove = elementDrag;
     }
@@ -35,5 +35,10 @@ function dragElement(elmnt) {
         pos4 = e.clientY;
         elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
         elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+
+    function closeDragElement() {
+        document.onmouseup = null;
+        document.onmousemove = null;
     }
 }
